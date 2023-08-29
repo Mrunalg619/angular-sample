@@ -21,3 +21,11 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 For more on GoJS, head to the [GoJS Website](https://gojs.net).
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+## Project Screenshots
+
+## Landing Page
+![landingPage](https://file%2B.vscode-resource.vscode-cdn.net/c%3A/Users/mrunal/Pictures/goJS_Diagram.PNG?version%3D1693295073501)
+
+## Tooltip on warning hover icon
+![tooltip](https://file%2B.vscode-resource.vscode-cdn.net/c%3A/Users/mrunal/Pictures/goJS_Diagram_Tooltip.PNG?version%3D1693295154622)
