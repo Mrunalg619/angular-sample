@@ -24,8 +24,8 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 ## Project Screenshots
 
-## Landing Page
+Landing Page
 ![landingPage](https://github.com/Mrunalg619/angular-sample/blob/master/src/assets/screenshots/goJS_Diagram.PNG?raw=true)
 
-## Tooltip on warning hover icon
-![tooltip](https://github.com/Mrunalg619/angular-sample/blob/master/src/assets/screenshots/goJS_Diagram_Tooltip.PNG?raw=true)
+Tooltip on warning hover icon
+![tooltip](./src/assets/screenshots/goJS_Diagram_Tooltip.PNG?raw=true)
