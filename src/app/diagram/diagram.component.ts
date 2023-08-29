@@ -180,7 +180,7 @@ export class DiagramComponent {
           },
           new go.Binding('fill', '', function (node) {
             // modify the fill based on the tree depth level
-            const levelColors = ['#AC193D', '#2672EC', '#8C0095', '#5133AB',
+            const levelColors = ['#2672EC', '#1D9C44', '#AC193D', '#8C0095', '#5133AB',
               '#008299', '#D24726', '#008A00', '#094AB2'];
             let color = node.findObject('SHAPE').fill;
             const dia: go.Diagram = node.diagram;
@@ -231,8 +231,8 @@ export class DiagramComponent {
               { row: 2, column: 0 },
               new go.Binding('text', 'key', function (v) { return 'ID: ' + v; })),
             $(go.TextBlock, { font: '9pt  Segoe UI,sans-serif', stroke: 'white' },
-              { name: 'boss', row: 2, column: 3 }, // we include a name so we can access this TextBlock when deleting Nodes/Links
-              new go.Binding('text', 'parent', function (v) { return 'Boss: ' + v; })),
+              { name: 'parent', row: 2, column: 3 }, // we include a name so we can access this TextBlock when deleting Nodes/Links
+              new go.Binding('text', 'parent', function (v) { return 'Parent: ' + v; })),
             $(go.TextBlock, { font: '9pt  Segoe UI,sans-serif', stroke: 'white' },  // the comments
               {
                 row: 3, column: 0, columnSpan: 5,
