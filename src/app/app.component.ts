@@ -12,17 +12,17 @@ export class AppComponent {
   public selectedNode = null;
   public model: go.TreeModel = new go.TreeModel(
     [
-      { 'key': 0, 'name': 'SDE 3', 'title': 'System Data Element', 'type': 'SDE' },
-      { 'key': 1, 'name': 'WM DGC Glossary', 'title': 'DGC Glossary', 'parent': 0, 'type': 'DGC' },
-      { 'key': 2, 'name': 'Account Number', 'title': 'PII Element', 'parent': 0, 'type': 'PII' },
-      { 'key': 3, 'name': 'Account Id', 'title': 'PII Element', 'parent': 0, 'type': 'PII' },
-      { 'key': 4, 'name': 'SDE 2', 'title': 'System Data Element', 'type': 'SDE' },
-      { 'key': 5, 'name': 'Finance DGC Glossary', 'title': 'DGC Glossary', 'parent': 4, 'type': 'DGC' },
-      { 'key': 6, 'name': 'Capital Gains', 'title': 'PII Element', 'parent': 4, 'type': 'PII' },
-      { 'key': 7, 'name': 'SDE 1', 'title': 'System Data Element', 'type': 'SDE' },
-      { 'key': 8, 'name': 'HR DGC Glossary', 'title': 'DGC Glossary', 'parent': 7, 'type': 'DGC' },
-      { 'key': 9, 'name': 'Last Name', 'title': 'PII Element', 'parent': 7, 'type': 'PII' },
-      { 'key': 10, 'name': 'First Name', 'title': 'PII Element', 'parent': 7, 'type': 'PII' }
+      { 'key': 0, 'name': 'Parent 3', 'title': 'Parent Element-1', 'type': 'Parent' },
+      { 'key': 1, 'name': 'ChildType-2 Element-1', 'title': 'ChildType-2 Element-1', 'parent': 0, 'type': 'ChildType-2' },
+      { 'key': 2, 'name': 'ChildType-1 Element-1', 'title': 'ChildType-1 Element-1', 'parent': 0, 'type': 'ChildType-1' },
+      { 'key': 3, 'name': 'ChildType-1 Element-2', 'title': 'ChildType-1 Element-2', 'parent': 0, 'type': 'ChildType-1' },
+      { 'key': 4, 'name': 'Parent 2', 'title': 'Parent Element-2', 'type': 'Parent' },
+      { 'key': 5, 'name': 'ChildType-2 Element-2', 'title': 'ChildType-2 Element-2', 'parent': 4, 'type': 'ChildType-2' },
+      { 'key': 6, 'name': 'ChildType-1 Element-3', 'title': 'ChildType-1 Element-3', 'parent': 4, 'type': 'ChildType-1' },
+      { 'key': 7, 'name': 'Parent 1', 'title': 'Parent Element-3', 'type': 'Parent' },
+      { 'key': 8, 'name': 'ChildType-2 Element-3', 'title': 'ChildType-2 Element-3', 'parent': 7, 'type': 'ChildType-2' },
+      { 'key': 9, 'name': 'ChildType-1 Element-4', 'title': 'ChildType-1 Element-4', 'parent': 7, 'type': 'ChildType-1' },
+      { 'key': 10, 'name': 'ChildType-1 Element-5', 'title': 'ChildType-1 Element-5', 'parent': 7, 'type': 'ChildType-1' }
     ]
   );
   public validationModel: any = [

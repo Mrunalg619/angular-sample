@@ -96,14 +96,14 @@ export class DiagramComponent {
     function validationIcon1(that) {
       return $(go.TextBlock,
         new go.Binding("text", "", (k) => {
-          if (k.type != "SDE") {
+          if (k.type != "Parent") {
             return (that.validationModel[k.key].message ? "\uE002" : "\ue86c");
           } else {
             return "";
           }
         }),
         { font: "16px Material Icons", height: 16, width: 16, margin: 4 },
-        { // for Validation of SDE
+        { // for Validation of Parent
           stroke: lightStroke,
           cursor: 'pointer',
           toolTip: myToolTip
@@ -169,7 +169,7 @@ export class DiagramComponent {
         // bind the Part.layerName to control the Node's layer depending on whether it isSelected
         new go.Binding('layerName', 'isSelected', function (sel) { return sel ? 'Foreground' : ''; }).ofObject(),
         new go.Binding("location", "", (k) => {
-          return k.part.data.type == 'SDE' ? new go.Point(k.part.location.x, k.part.location.y) : ( k.part.data.type == 'DGC' ? new go.Point(400, k.part.location.y) : new go.Point(550, k.part.location.y));
+          return k.part.data.type == 'Parent' ? new go.Point(k.part.location.x, k.part.location.y) : ( k.part.data.type == 'ChildType-2' ? new go.Point(400, k.part.location.y) : new go.Point(550, k.part.location.y));
         }).ofObject(),
         // define the node's outer shape
         $(go.Shape, 'Rectangle',
@@ -245,7 +245,7 @@ export class DiagramComponent {
           ),  // end Table Panel
           $(go.Panel, "Horizontal",
             { row: 1, alignment: new go.Spot(1, 0) },
-            icon("\uE5CD", { // click this to delete an SDE
+            icon("\uE5CD", { // click this to delete an Parent
               stroke: lightStroke,
               cursor: 'pointer',
               click: (e, obj) => {
